@@ -12,6 +12,8 @@
         <title>Home Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Home</h1>
+        <h2>Greetings ${username}</h2>
+        <a href="login?logout">Log off</a>
     </body>
 </html>

@@ -5,27 +5,23 @@
  */
 package classes;
 
-
-
-
-
 /**
  *
  * @author Andrew
  */
 public class AccountService {
-    public User login(String username, String password)
-    {
+
+    public AccountService() {
+
+    }
+
+    public User login(String username, String password) {
         User user;
-        if(username.equals("abe") || username.equals("barb") && password.equals("password"))
-        {
-           user = new User(username,null);
-           return user;
-        }
-        else
-        {
-            user = new User(null,null);
+        if (username.equals("abe") || username.equals("barb") && password.equals("password")) {
+            user = new User(username, null);
             return user;
+        } else {
+            return null;
         }
     }
 }
